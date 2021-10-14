@@ -4,11 +4,11 @@ Todo List app built with ReactJs and SCSS.
 
 ## Screenshot
 
-<img src="" alt="screenshot" width="380"/>
+<img src="https://i.imgur.com/t6bEJe4.png" alt="screenshot" width="380"/>
 
 ## Live Demo
 
-https://
+https://todolist-reactjs-eight.vercel.app/
 
 ## Features
 
