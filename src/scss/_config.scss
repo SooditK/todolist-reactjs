@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+html {
+  --textColorH: #fff;
+  --mainColor: #111;
+  --primaryColor: #eee;
+  background: linear-gradient(90deg, #00d4ff, #2a5c75) !important;
+}
+// DARK MODE
+html[data-theme="dark"] {
+  --textColorH: #fff;
+  --mainColor: #fff;
+  --primaryColor: #05050d;
+
+  .App {
+    .tasks .task {
+      label::before {
+        border: 1px solid #05050d !important;
+      }
+      label::after {
+        background: #eee !important;
+        color: #05050d;
+      }
+      .date {
+        color: #bbb;
+      }
+    }
+    form {
+      input::placeholder,
+      input[type="date"]::-webkit-datetime-edit {
+        color: #bbb;
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(0.64);
+      }
+    }
+  }
+}
+
+body {
+  // BODY STYLE
+  background: linear-gradient(90deg, #00d4ff, #2a5c75) !important;
+  color: #222;
+  min-height: 100vh;
+  font-family: Roboto, Oxygen, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.4s linear;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Oxygen, sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
